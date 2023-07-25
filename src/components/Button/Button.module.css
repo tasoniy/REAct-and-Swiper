@@ -1,0 +1,16 @@
+.button {
+  background-color: #57B8FF;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  padding: 21px 34px;
+  max-height: 70px;
+  font-weight: 400;
+  font-size: Clamp(10px, 1.5vw, 18px);
+  border: none;
+  transform: scale(1);
+  transition: .2S linear;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}

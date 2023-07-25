@@ -1,0 +1,13 @@
+.slide {
+  width: 100%;
+}
+
+.slide__wrapper {
+  max-width: 174px;
+  padding: 11px;
+  border-radius: 20px;
+}
+
+.active {
+  background-color: #3B3D46;
+}

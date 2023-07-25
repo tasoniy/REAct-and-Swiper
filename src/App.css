@@ -1,38 +1,238 @@
-.App {
-  text-align: center;
+.background {
+  background: linear-gradient(90deg, #141820 56%, #57B8FF 44.03%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  max-height: 48px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo img {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.main-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1320px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.flexbox {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.generation__title {
+  font-size: Clamp(14px, 5vw, 72px);
+  margin: 14px 0 43px;
+}
+
+.generation__accent {
+  position: relative;
+}
+
+.generation__accent img {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.generation__text {
+  color: #999999;
+  font-size: Clamp(10px, 1.5vw, 18px);
+  line-height: 1.55;
+  margin: 43px 0 53px;
+}
+
+.generation__content {
+  padding: 0 0 Clamp(100px, 17vw,250px);
+}
+
+.generation__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 660px;
+  width: 50%;
+}
+
+.generation__img img {
+  width: 100%;
+}
+
+.generation__link {
+  color: #ffffff;
+  font-size: Clamp(10px, 1.5vw, 18px);
+  line-height: 1.55;
+  margin: 0 0 0 40px;
+}
+
+.generation__link:hover {
+  color: #999999;
+}
+
+.customize {
+  background-color: #2A313C;
+}
+
+.customize__content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.customize__title {
+  font-size: Clamp(20px, 4vw, 64px);
+  line-height: 1.16;
+  margin-top: 12px;
+}
+
+.customize__img {
+  position: absolute;
+  left: 0;
+  max-width: 597px;
+  max-height: 695px;
+  width: 50%;
+  height: 100%;
+}
+
+.customize__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.customize__wrapper {
+  width: 45.2%;
+  padding:Clamp(20px, 8vw, 83px) 0;
+}
+
+.customize__text {
+  color: rgba(223, 223, 223, 0.8);
+  margin: 38px 0 54px;
+  font-size: Clamp(9px, 1.5vw, 20px);
+  line-height: 150%;
+}
+
+.news__content {
+  padding-top: 130px;
+  padding-bottom:130px;
+}
+
+.news__title {
+  font-size: Clamp(18px, 5vw, 64px);
+}
+
+.news__table {
+  width: 100%;
+}
+.news__articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 24px;
+  margin: 0 0 0 24px;
+}
+
+.news__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0 68px;
+}
+
+.news__button {
+  align-self: flex-end;
+}
+
+.news__main-article {
+  width: 49.3%;
+}
+
+.news__main-card h3 {
+  font-size: Clamp(13px, 3vw, 36px);
+}
+
+
+@media screen and (max-width:1395px) {
+  .container {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width:630px) {
+  .logo {
+    width: 120px;
+  }
+  .generation__img {
+    position: static;
+  }
+
+  .generation__text {
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  .generation__text br {
+    display: none;
+  }
+
+  .customize__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .customize__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .customize__img {
+    position: static;
+  }
+  .customize__wrapper {
+    width: 100%;
+    padding: 20px 0 0;
+  }
+
+  .customize__text br {
+    display: none;
+  }
+
+  .news__content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .news__cells-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news__main-article {
+    width: 100%;
+  }
+
+  .news__articles {
+    margin: 40px 0 0 0;
   }
 }

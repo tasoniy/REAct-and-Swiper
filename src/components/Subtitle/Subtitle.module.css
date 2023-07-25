@@ -1,0 +1,13 @@
+.subtitle {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #57B8FF;
+  font-size: Clamp(10px, 1.5vw, 16px);
+  line-height: 1;
+}
+
+.subtitle::before {
+  content: url("/src/assets/images/fire.png");
+  margin: 0 15px 0 0;
+}
